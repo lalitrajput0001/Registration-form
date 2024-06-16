@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form >
+        <div class="container">
+
+        <label for="Name">First & Last Name :<br></label>
+        <input placeholder="Enter Your Name" type="text" id="Name" name="name" required /><br>
+
+        <label for="Number">Phone Number :<br></label>
+        <input placeholder="ENter your Contact Number" type="number" id="Number"
+        name="number" required/>  <br>
+        <label for="Email">E-mail Address :<br></label>
+        <input type="email" aria-placeholder="Enter your E-mail" name="Email" id="Email" required/><br>
+        <label for="message">Message :<br></label>
+        <textarea name="" id="message" style="height: 100px;" cols="50" rows="4" placeholder="Your message here..." required=""></textarea><br/>
+        <input type="button" value="button" onclick="send()">
+    
+</form>
+</div>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="java.js"></script>
+    
+</body>
+</html>
